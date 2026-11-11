@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pizzeria ElBAITmc</title>
+    <link rel="stylesheet" href="miaw.css">
+    <script src="miau.js" defer></script>
+</head>
+<body>
+
+    <h1>Bienvenidos a Pizzería ElBAITmc</h1>
+
+    <p>En nuestra pizzería tenemos distintos tipos de pizzas.</p>
+
+    <label for="producto">Pizzas:</label>
+
+    <select id="producto">
+        <option value="350">Muzzarella ($350)</option>
+        <option value="420">Napolitana ($420)</option>
+        <option value="500">Especial ($500)</option>
+    </select>
+
+    <br><br>
+
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad" min="1">
+
+    <br><br>
+
+    <h3>Modalidad de entrega</h3>
+
+    <input type="radio" id="local" name="entrega" value="local">
+    <label for="local">Retirar en local</label>
+
+    <input type="radio" id="domicilio" name="entrega" value="domicilio">
+    <label for="domicilio">Envío a domicilio</label>
+
+    <br><br>
+
+    <button id="comprar">Calcular pedido</button>
+
+    <p id="resultado"></p>
+
+    
+</body>
+</html>
